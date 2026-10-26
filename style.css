@@ -1,0 +1,53 @@
+:root {
+  --sky-top: #141a35;
+  --sky-mid: #2c2752;
+  --sky-low: #5b3d63;
+  --glow: #f2a65a;
+  --sun: #f6c96b;
+  --text: #f4f2fb;
+  --muted: #c3bfd9;
+  --card: rgba(255, 255, 255, 0.07);
+  --card-line: rgba(255, 255, 255, 0.12);
+  --link: #ffd58a;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--sky-top) 0%, var(--sky-mid) 55%, var(--sky-low) 100%);
+  background-color: var(--sky-top);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a { color: var(--link); text-underline-offset: 3px; }
+main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+header.brand { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+header.brand img { width: 56px; height: 56px; border-radius: 13px; box-shadow: 0 6px 20px rgba(0,0,0,0.35); }
+header.brand a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 19px; }
+h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+h3 { font-size: 17px; margin: 22px 0 4px; }
+p, li { color: var(--muted); }
+strong, b { color: var(--text); }
+.lede { font-size: 19px; color: var(--muted); margin: 0 0 24px; }
+.card { background: var(--card); border: 1px solid var(--card-line); border-radius: 18px; padding: 18px 20px; margin: 20px 0; }
+.card p:first-child { margin-top: 0; }
+.card p:last-child { margin-bottom: 0; }
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+.button {
+  display: inline-block; padding: 12px 20px; border-radius: 999px; font-weight: 600; text-decoration: none;
+  background: var(--sun); color: #2a1f10; margin: 8px 12px 8px 0;
+}
+.button.secondary { background: var(--card); color: var(--text); border: 1px solid var(--card-line); }
+.hero { text-align: center; padding-top: 24px; }
+.hero img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 12px 40px rgba(0,0,0,0.45); }
+.hero h1 { font-size: 40px; margin-top: 24px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin: 32px 0; text-align: left; }
+.features .card { margin: 0; }
+.features h3 { margin-top: 0; }
+footer { margin-top: 48px; font-size: 14px; color: var(--muted); }
+footer a { color: var(--muted); }
+.updated { font-size: 15px; }
+footer.center { text-align: center; }
